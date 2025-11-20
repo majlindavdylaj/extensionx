@@ -1,3 +1,8 @@
+<p align="center">
+	<a href="https://pub.dartlang.org/packages/extensionx"><img src="https://img.shields.io/pub/v/lindi?color=blue" alt="Pub dev"></a>
+	<a href="https://github.com/majlindavdylaj/extensionx/actions"><img src="https://github.com/majlindavdylaj/lindi/workflows/Build/badge.svg" alt="Build Status"></a>
+</p>
+
 # ExtensionX
 
 A Flutter package that provides a collection of handy **extensions**  to make your life easier and your code cleaner.
@@ -103,5 +108,3 @@ TextTheme textTheme = context.xTextTheme;
 
 Contributions, issues, and feature requests are welcome!
 Feel free to open a PR or an issue if you have suggestions or find bugs.
-
----
