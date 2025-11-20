@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:extensionx/extensionx.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Extensionx',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -28,15 +28,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  late bool isToday;
+
   @override
   void initState() {
     super.initState();
-    double value = 1.105.xRoundToDecimals(2);
-    double value1 = double.parse(1.105.toStringAsFixed(2));
-    DateTime? dateTime = DateTime.now();
-    bool isBetween = dateTime.xIsBetween(dateTime, dateTime, inclusive: true);
-    print('$value : $value1');
-    print(isBetween);
+    isToday = DateTime.now().xIsToday;
   }
 
   @override
@@ -44,9 +41,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Utilx'),
+        title: Text('Extensionx'),
       ),
-      body: Center(child: Text('Utilx Example App')),
+      body: Center(child: Text('Extensionx Example App')),
     );
   }
 }

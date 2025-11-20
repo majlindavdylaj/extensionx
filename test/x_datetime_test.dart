@@ -30,5 +30,69 @@ void main() {
       final date2 = DateTime(2024, 1, 11);
       expect(date2.xIsBetween(start, end), isFalse);
     });
+
+    test('xIsSameDay', () {
+      final date1 = DateTime(2024, 5, 10);
+      final date2 = DateTime(2024, 5, 10);
+      expect(date1.xIsSameDay(date2), isTrue);
+
+      final date3 = DateTime(2024, 5, 10);
+      final date4 = DateTime(2024, 5, 11);
+      expect(date3.xIsSameDay(date4), isFalse);
+
+      final date5 = DateTime(2024, 5, 10);
+      final date6 = DateTime(2024, 6, 10);
+      expect(date5.xIsSameDay(date6), isFalse);
+
+      final date7 = DateTime(2024, 5, 10);
+      final date8 = DateTime(2025, 5, 10);
+      expect(date7.xIsSameDay(date8), isFalse);
+
+      final date9 = DateTime(2024, 5, 10, 8, 30);
+      final date10 = DateTime(2024, 5, 10, 23, 45);
+      expect(date9.xIsSameDay(date10), isTrue);
+    });
+
+    test('xIsToday', () {
+      final today = DateTime.now();
+      expect(today.xIsToday, isTrue);
+
+      final yesterday = DateTime.now().subtract(const Duration(days: 1));
+      expect(yesterday.xIsToday, isFalse);
+
+      final tomorrow = DateTime.now().add(const Duration(days: 1));
+      expect(tomorrow.xIsToday, isFalse);
+
+      final now = DateTime.now();
+      final differentTimeToday = DateTime(
+        now.year,
+        now.month,
+        now.day,
+        now.hour + 5,
+        now.minute + 10,
+      );
+      expect(differentTimeToday.xIsToday, isTrue);
+    });
+
+    test('xIsYesterday', () {
+      final yesterday = DateTime.now().subtract(const Duration(days: 1));
+      expect(yesterday.xIsYesterday, isTrue);
+
+      final today = DateTime.now();
+      expect(today.xIsYesterday, isFalse);
+
+      final twoDaysAgo = DateTime.now().subtract(const Duration(days: 2));
+      expect(twoDaysAgo.xIsYesterday, isFalse);
+
+      final now = DateTime.now();
+      final differentTimeYesterday = DateTime(
+        now.year,
+        now.month,
+        now.day - 1,
+        now.hour + 5,
+        now.minute + 10,
+      );
+      expect(differentTimeYesterday.xIsYesterday, isTrue);
+    });
   });
 }

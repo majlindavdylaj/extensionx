@@ -46,5 +46,15 @@ void main() {
       expect('user@domain'.xIsEmail, isFalse);
       expect('@domain.com'.xIsEmail, isFalse);
     });
+
+    test('xToTitleCase', () {
+      expect('hello'.xToTitleCase(), 'Hello');
+      expect('hello world'.xToTitleCase(), 'Hello World');
+      expect('flutter is awesome'.xToTitleCase(), 'Flutter Is Awesome');
+      expect('hElLo wORld'.xToTitleCase(), 'HElLo WORld');
+      expect(''.xToTitleCase(), '');
+      expect('  hello   world  '.xToTitleCase(), '  Hello   World  ');
+      expect('a b c'.xToTitleCase(), 'A B C');
+    });
   });
 }

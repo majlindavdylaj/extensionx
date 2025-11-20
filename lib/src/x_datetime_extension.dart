@@ -11,4 +11,18 @@ extension XDatetimeExtension on DateTime {
       return isAfter(start) && isBefore(end);
     }
   }
+
+  bool xIsSameDay(DateTime other) {
+    return year == other.year && month == other.month && day == other.day;
+  }
+
+  bool get xIsToday {
+    final now = DateTime.now();
+    return xIsSameDay(now);
+  }
+
+  bool get xIsYesterday {
+    final yesterday = DateTime.now().subtract(const Duration(days: 1));
+    return xIsSameDay(yesterday);
+  }
 }

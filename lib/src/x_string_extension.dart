@@ -9,6 +9,11 @@ extension XStringExtension on String {
     return isEmpty ? this : '${this[0].toUpperCase()}${substring(1)}';
   }
 
+  String xToTitleCase() {
+    if (isEmpty) return this;
+    return split(' ').map((word) => word.xCapitalize).join(' ');
+  }
+
   bool get xIsEmail {
     final emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+');
     return emailRegex.hasMatch(this);
