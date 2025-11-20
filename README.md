@@ -1,6 +1,6 @@
 <p align="center">
-	<a href="https://pub.dartlang.org/packages/extensionx"><img src="https://img.shields.io/pub/v/lindi?color=blue" alt="Pub dev"></a>
-	<a href="https://github.com/majlindavdylaj/extensionx/actions"><img src="https://github.com/majlindavdylaj/lindi/workflows/Build/badge.svg" alt="Build Status"></a>
+	<a href="https://pub.dartlang.org/packages/extensionx"><img src="https://img.shields.io/pub/v/extensionx?color=blue" alt="Pub dev"></a>
+	<a href="https://github.com/majlindavdylaj/extensionx/actions"><img src="https://github.com/majlindavdylaj/extensionx/workflows/Build/badge.svg" alt="Build Status"></a>
 </p>
 
 # ExtensionX
