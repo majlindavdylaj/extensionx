@@ -1,7 +1,11 @@
 name: extensionx
-description: "ExtensionX"
+description: "ExtensionX is a powerful collection of quality-of-life extension methods designed to eliminate boilerplate and enhance code readability in Flutter applications."
 version: 0.0.1
-homepage:
+homepage: https://github.com/majlindavdylaj/extensionx
+repository: https://github.com/majlindavdylaj/extensionx
+issue_tracker: https://github.com/majlindavdylaj/extensionx/issues
+topics: [extension, flutter, dart, utilities, productivity]
+funding: [https://patreon.com/koddev]
 
 environment:
   sdk: ^3.9.2
@@ -15,6 +19,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
+screenshots:
+  - description: The Lindi package logo.
+    path: assets/logo.png
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
