@@ -1,6 +1,6 @@
 name: extensionx
 description: "ExtensionX is a powerful collection of quality-of-life extension methods designed to eliminate boilerplate and enhance code readability in Flutter applications."
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/majlindavdylaj/extensionx
 repository: https://github.com/majlindavdylaj/extensionx
 issue_tracker: https://github.com/majlindavdylaj/extensionx/issues

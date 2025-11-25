@@ -44,5 +44,29 @@ void main() {
       expect(0.xIsOdd, isFalse);
       expect((-4).xIsOdd, isFalse);
     });
+
+    test('xMicroseconds', () {
+      expect(5.xMicroseconds, const Duration(microseconds: 5));
+    });
+
+    test('xMilliseconds', () {
+      expect(10.xMilliseconds, const Duration(milliseconds: 10));
+    });
+
+    test('xSeconds', () {
+      expect(1.xSeconds, const Duration(seconds: 1));
+    });
+
+    test('xMinutes', () {
+      expect(6.xMinutes, const Duration(minutes: 6));
+    });
+
+    test('xHours', () {
+      expect(2.xHours, const Duration(hours: 2));
+    });
+
+    test('xDays', () {
+      expect(7.xDays, const Duration(days: 7));
+    });
   });
 }
