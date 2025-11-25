@@ -1,3 +1,12 @@
-## 0.0.1
+## 0.1.0
+### Added
+- **Int Extensions**
+    - `xMicroseconds`
+    - `xMilliseconds`
+    - `xSeconds`
+    - `xMinutes`
+    - `xHours`
+    - `xDays`
 
-* Initial release.
+## 0.0.1
+- Initial release.

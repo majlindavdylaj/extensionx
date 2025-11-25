@@ -44,6 +44,12 @@ flutter pub get
 - `xIsNullOrZero` – Check if int is null or zero.
 - `xIsEven` – Check if number is even.
 - `xIsOdd` – Check if number is odd.
+- `xMicroseconds` – Converts this int to microseconds Duration.
+- `xMilliseconds` – Converts this int to milliseconds Duration.
+- `xSeconds` – Converts this int to seconds Duration.
+- `xMinutes` – Converts this int to minutes Duration.
+- `xHours` – Converts this int to hours Duration.
+- `xDays` – Converts this int to days Duration.
 
 ### **String**
 - `xIsNull` – Check if string is null.
